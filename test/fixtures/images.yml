@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  unsplash_id: MyString
+  url: MyText
+  alt_description: MyText
+  description: MyText
+  latitude: 1.5
+  longitude: 1.5
+  location_name: MyText
+
+two:
+  unsplash_id: MyString
+  url: MyText
+  alt_description: MyText
+  description: MyText
+  latitude: 1.5
+  longitude: 1.5
+  location_name: MyText

@@ -10,10 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_22_071504) do
+ActiveRecord::Schema.define(version: 2020_09_23_024607) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "images", force: :cascade do |t|
+    t.string "unsplash_id"
+    t.text "url"
+    t.text "alt_description"
+    t.text "description"
+    t.float "latitude"
+    t.float "longitude"
+    t.text "location_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "images_users", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "image_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.text "name"
